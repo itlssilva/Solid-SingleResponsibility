@@ -1,0 +1,13 @@
+@Notifications.Api_HostAddress = http://localhost:5166
+
+POST {{Notifications.Api_HostAddress}}/notifications
+Content-Type: application/json
+
+{
+  "recipient": "destinatario@example.com",
+  "subject": "Bem-vindo!",
+  "body": "<p>Ola, sua conta foi criada com sucesso.</p>",
+  "channel": "Email"
+}
+
+###
